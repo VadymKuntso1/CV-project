@@ -12,7 +12,7 @@
             <td class="col">ID</td>
             <td class="col">NAME</td>
       </tr>
-    {% for el in tables%}
+    {% for el in list1%}
     <tr>
        <td>
             {{ el.id }}
@@ -31,4 +31,5 @@
 <button type="submit" class="btn btn-primary">Add new</button>
     </div>
 </div>
+<a href="{% url 'new' %}">Add</a>
 {%endblock%}
