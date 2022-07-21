@@ -10,10 +10,10 @@ input[type="text"]{
 textarea{
     font-size:50px !important;
 }
-input[type="text"]::placeholder{
+input[type="text"].message::placeholder{
     font-size:50px;
 }
-button{
+button.message{
     font-size:50px !important;
     border-radius:30px !important;
 }

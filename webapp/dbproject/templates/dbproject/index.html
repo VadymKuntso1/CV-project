@@ -1,0 +1,34 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}
+{{ title }}
+{%endblock%}
+
+{% block body %}
+<div class="content">
+
+    <table class="table">
+        <tr>
+            <td class="col">ID</td>
+            <td class="col">NAME</td>
+      </tr>
+    {% for el in tables%}
+    <tr>
+       <td>
+            {{ el.id }}
+        </td>
+        <td>
+            {% filter upper%}
+                {{el.name}}
+            {% endfilter %}
+        </td>
+    </tr>
+    {%endfor%}
+    </table>
+        <div class="input-group input-group-sm mb-3">
+  <span class="input-group-text" id="inputGroup-sizing-sm">Name</span>
+  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+<button type="submit" class="btn btn-primary">Add new</button>
+    </div>
+</div>
+{%endblock%}
