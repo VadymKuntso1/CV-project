@@ -1,0 +1,19 @@
+.content{
+    margin-top:5%;
+}
+label{
+    font-size:50px !important;
+}
+input[type="text"]{
+    font-size:50px;
+}
+textarea{
+    font-size:50px !important;
+}
+input[type="text"]::placeholder{
+    font-size:50px;
+}
+button{
+    font-size:50px !important;
+    border-radius:30px !important;
+}

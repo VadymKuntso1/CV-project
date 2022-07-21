@@ -1,0 +1,70 @@
+.content{
+    padding-left:30%;
+    padding-right:30%;
+}
+body{
+font-family: 'Comfortaa', cursive;
+}
+.me_photo{
+    border-radius:500px !important;
+    height:20em;
+}
+a.contacts_link{
+
+    text-decoration:none;
+    color:black;
+    text-transform:uppercase;
+}
+.br_contacts{
+    width:30%;
+    color:black
+}
+.inform_blocks{
+    margin-bottom:100px;
+}
+.inform_blocks>h2{
+    font-family: 'Comfortaa', cursive;
+}
+.inform-title{
+
+}
+.head{
+    margin-bottom:40px;
+}
+.name_main{
+padding-top:100px;
+background:#130d2e!important;
+text-align:right ;
+color:white;
+font-size:3em
+
+}
+.name_main > p{
+    font-size:15px !important;
+    margin-right:20px;
+}
+.stack_li>li{
+    text-transform:uppercase !important;
+    margin:5px;
+}
+.skill_li > li{
+    margin:5px;
+}
+@media only screen and (max-width: 600px) {
+
+  .content{
+    padding-left:5% !important;
+    padding-right:5% !important;
+
+    }
+    .me_photo{
+        border-radius:500px !important;
+        height:10em;
+    }
+    .head{
+    background:#130d2e!important;
+    }
+    .me_photo{
+        display: none !important;
+    }
+}
