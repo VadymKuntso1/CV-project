@@ -1,0 +1,8 @@
+setup.py
+migrations/0001_initial.py
+migrations/0002_alter_table_id.py
+migrations/__init__.py
+view.egg-info/PKG-INFO
+view.egg-info/SOURCES.txt
+view.egg-info/dependency_links.txt
+view.egg-info/top_level.txt

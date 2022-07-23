@@ -11,6 +11,7 @@
         <tr>
             <td class="col">ID</td>
             <td class="col">NAME</td>
+            <td class="col">REMOVE</td>
       </tr>
     {% for el in list1%}
     <tr>
@@ -22,14 +23,23 @@
                 {{el.name}}
             {% endfilter %}
         </td>
+        <td>
+            <a href="{% url 'remove' el.id %}">X</a>
+        </td>
     </tr>
     {%endfor%}
     </table>
+    <form method="post">
+        {% csrf_token %}
+
         <div class="input-group input-group-sm mb-3">
-  <span class="input-group-text" id="inputGroup-sizing-sm">Name</span>
-  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-<button type="submit" class="btn btn-primary">Add new</button>
-    </div>
+
+            <span class="input-group-text" id="inputGroup-sizing-sm">Name</span>
+            {{form.name}}
+            <button type="submit" class="btn btn-primary">Add new</button>
+        </div>
+        {{error}}
+    </form>
 </div>
 <a href="{% url 'new' %}">Add</a>
 {%endblock%}

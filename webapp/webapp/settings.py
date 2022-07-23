@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'telegram',
     'main',
     'dbproject',
     'django.contrib.admin',
@@ -127,3 +128,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATICFILES_DIRT = [
     BASE_DIR / "static"
 ]
+
+TOKEN = '5222512184:AAEc2sILA6AqhvwKv0aYZIROZQ5cvfJfurc'
+PROXY_URL = 'socks5h://127.0.0.1:9150'
