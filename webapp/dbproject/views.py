@@ -28,10 +28,10 @@ def removeTable(request,pk):
     record.delete()
     return redirect(index)
 
-
-def getlist():
-    list1 = Table.objects.all()
-    list = ''
-    for i in list1:
-        list += f"{i.id} : {i.name}\n"
-    return list
+class tel():
+    def getlist(self):
+        list1 = Table.objects.all()
+        list = ''
+        for i in list1:
+            list += f"{i.id} : {i.name}\n"
+        return list

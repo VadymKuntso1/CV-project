@@ -1,6 +1,6 @@
 from telegram.ext import Updater, CommandHandler, CallbackContext, MessageHandler, Filters
 from telegram import Update
-from .views import tel
+from ...views import tel
 contact1: False
 
 
