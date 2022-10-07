@@ -6,7 +6,5 @@ class TableForm(ModelForm):
         model = Table
         fields = ['name']
         widgets = {
-            'name': TextInput(attrs={
-                'class': 'form-control'
-            })
+            'name': TextInput(attrs={'class': 'form-control'})
         }

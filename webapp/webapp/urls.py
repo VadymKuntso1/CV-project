@@ -7,5 +7,7 @@ urlpatterns = [
     path('dbproject/',include('dbproject.urls')),
     path('telegram/',include('telegram.urls')),
     path('parsing/',include('parsing.urls')),
-    path('camera/', include('camera.urls'))
+    path('camera/', include('camera.urls')),
+    path('todolist/',include('todolist.urls')),
+    path('todo/',include('todo.urls'))
 ]

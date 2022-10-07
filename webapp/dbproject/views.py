@@ -13,9 +13,6 @@ def index(request):
             error = 'Uncorrect message'
 
     form = TableForm()
-    data = {
-        'form': form
-    }
     list1 = Table.objects.all()
     return render(request,'dbproject/index.html',{'list1':list1,'form':form,'error':error})
 

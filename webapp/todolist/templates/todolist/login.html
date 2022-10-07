@@ -1,0 +1,36 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}
+{{ title }}
+{%endblock%}
+
+{% load static %}
+<html>
+
+
+{% block body %}
+    <form method="post">
+        {% csrf_token %}
+
+        <div class="input-group input-group-sm mb-3">
+
+            <span class="input-group-text" id="inputGroup-sizing-sm">Loggin</span>
+            {{form.login}}
+            <span class="input-group-text" id="inputGroup-sizing-sm">Password</span>
+            {{form.password}}
+            <button type="submit" class="btn btn-primary">Log In</button>
+        </div>
+        {{error}}
+    </form>
+
+
+<a href="{% url 'registration' %}"> <button type="button" class="btn btn-primary">Create account</button></a>
+{% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+{{err}}
+{%endblock%}
