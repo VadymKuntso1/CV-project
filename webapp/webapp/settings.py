@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'todolist',
+    'lang',
     'parsing',
     'camera',
     'telegram',
@@ -131,6 +132,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATICFILES_DIRT = [
     BASE_DIR / "static"
 ]
-
+current_lang = "en"
 TOKEN = '5222512184:AAEc2sILA6AqhvwKv0aYZIROZQ5cvfJfurc'
 PROXY_URL = 'socks5h://127.0.0.1:9150'

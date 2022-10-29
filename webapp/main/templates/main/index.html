@@ -5,6 +5,7 @@
 {%endblock%}
 
 {% block body %}
+
 <content>
     <div class="row content">
         <div class="row col-12 head">
@@ -18,8 +19,11 @@
             <div class="col-md-4 name_main">
                 KUNTSO VADYM
                 <p class="age">
-                    21 age
+                    {{words.age}}
                 </p>
+                <a href="{% url 'change' %}">
+                <button type="button" class="btn btn-dark">{{words.lang}}</button>
+                    </a>
             </div>
 
 
@@ -29,7 +33,7 @@
 
         <br >
         <div class="inform_blocks">
-            <h2>Contacts</h2>
+            <h2>{{ words.contact }}</h2>
             <hr class="br_contacts"  class="hr_contacts">
             <a href="tel:+380995652003" class="contacts_link">
                 (099) 56-52-003
@@ -44,18 +48,18 @@
             </a>
         </div>
         <div class="inform_blocks">
-            <h2 class="inform-title">About me</h2>
+            <h2 class="inform-title">{{words.aboutme}}</h2>
             <hr class="br_contacts"  class="hr_contacts">
-            A teacher with two years of experience. Provider of individual lessons.
+            {{words.ab1}}
         </div>
         <div class="inform_blocks">
-            <h2 class="inform-title">Skills</h2>
+            <h2 class="inform-title">{{words.Skills}}</h2>
             <hr class="br_contacts"  class="hr_contacts">
             <ul class="skill_li">
-                <li>I quickly learn new fields and technologies</li>
-                <li>Good communication skills</li>
-                <li>A wide technology stack</li>
-                <li>Intermediate level of English</li>
+                <li>{{words.sk1}}</li>
+                <li>{{words.sk2}}</li>
+                <li>{{words.sk3}}</li>
+                <li>{{words.sk4}}</li>
             </ul>
         </div>
 
@@ -66,20 +70,20 @@
     <div class="col-md-6 main-right">
 
         <div class="inform_blocks">
-            <h2 class="inform-title">Experience</h2>
+            <h2 class="inform-title">{{words.Experience}}</h2>
             <hr class="br_contacts"  class="hr_contacts">
             <h4>IT STEP<br></h4>
-            <h6>LECTOR FOR 2 YEARS</h6>
+            <h6>{{words.exp1}}</h6>
         </div>
         <div class="inform_blocks">
-            <h2 class="inform-title">Education</h2>
+            <h2 class="inform-title">{{words.Education}}</h2>
             <hr class="br_contacts"  class="hr_contacts">
-            <h4>Bachelor's degree, specialization - software engineering<br></h4>
-            <h6>Husyatyn College of Ternopil National Technical University named after Ivan Pulyu | 2016-2020</h6>
-            <h6>Ternopil National Technical University named after Ivan Pulyu | 2020</h6>
+            <h4>{{words.edt}}<br></h4>
+            <h6>{{words.ed1}}</h6>
+            <h6>{{words.ed2}}</h6>
         </div>
         <div class="inform_blocks">
-            <h2 class="inform-title">Stack</h2>
+            <h2 class="inform-title">{{words.Stack}}</h2>
             <hr class="br_contacts"  class="hr_contacts">
             <ul class="stack_li">
                 <li >HTML/CSS/Less/Bootstrap</li>
